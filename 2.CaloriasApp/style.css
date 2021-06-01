@@ -20,6 +20,14 @@
     --active-dark: #7C7C7C;
 }
 
+.light{
+
+}
+
+.dark{
+    
+}
+
 /*Header*/
 
 header{
@@ -41,7 +49,6 @@ header{
 
 /*Main*/
 main{
-    background-color: red;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -90,12 +97,12 @@ main{
 
 
 .img-food-button:hover{
-    background-color: #7AF4EE;
+    background-color: var(--active-ligth);
     box-shadow: 10px 10px 5px #aaaaaa;
 }
 
 .img-food-selected{
-    background-color: #7AF4EE;
+    background-color: var(--active-ligth);
     box-shadow: 10px 10px 5px #aaaaaa;
 }
 
