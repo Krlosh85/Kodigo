@@ -181,8 +181,22 @@ document.getElementById("hamburger").addEventListener(
 );
 
 //Button Dark Mode
-let button_mode = document.getElementById("change-mode");
+const colorSwitch = document.getElementById("color-switch");
 
-button_mode.addEventListener("click", function(){
-	//Check the 
-})
+colorSwitch.addEventListener('click', checkMode);
+
+function checkMode(){
+  if(colorSwitch.checked){
+    darkModeOn();
+  }else{
+    darkModeOff();
+  }
+}
+
+function darkModeOn(){
+  document.body.classList.add("dark-mode");
+}
+
+function darkModeOff(){
+  document.body.classList.remove("dark-mode");
+}

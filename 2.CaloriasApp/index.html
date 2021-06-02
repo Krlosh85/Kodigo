@@ -8,13 +8,13 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="light">
+<body>
     <header class="header">
         <h3>Nutrition & Health</h3>
-        <img src="resources/dark-mode.png" alt="Change Mode" id="change-mode">
+        <input type="checkbox" name="color-switch" id="color-switch" class="color-switch">
     </header>
     <main class="main">
-        <section class="food-section">
+        <section class="food-section in-flex">
             <h4>Desayuno</h4>
             <div class="div-food">
                 <button class="img-food-button" id="apple"><img src="resources/apple.png" alt="Comida" class="img-food-section"></button>
@@ -34,7 +34,7 @@
                 <button class="img-food-button" id="hamburger"><img src="resources/hamburger.png" alt="Comida" class="img-food-section"></button>
             </div>
         </section>
-        <section class="calories-section">
+        <section class="calories-section in-flex">
             <img src="resources/diet.png" alt="Img Calories" class="img-calories-section">
             <h3>Calorias totales de hoy:</h3>            
             <h3 id="diary-calories">0</h3>

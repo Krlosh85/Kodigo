@@ -9,37 +9,27 @@
 /*Variables used in the development of the site*/
 :root{
     --navbar-ligth: #333333;
-    --navbar-dark: #000000;
     --calorias-section-ligth: #ECECEC;
-    --calorias-section-dark: #262626;
+    --background-clr: #ECECEC;
     --food-section-ligth: #E1F4F3;
-    --food-section-dark: #404040;
     --text-ligth: #FFFFFF;
-    --text-dark: #000000;
+    --text-sections: #000000;
     --active-ligth: #7AF4EE;
-    --active-dark: #7C7C7C;
 }
 
-.light{
-
-}
-
-.dark{
-    
-}
 
 /*Header*/
 
 header{
     background-color: var(--navbar-ligth);
+    color: var(--text-ligth);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     padding: 0.1vh;
-    height: 5vh;
-    color: var(--text-ligth);
+    height: 5vh;    
     size: large;
     position: fixed;
     width: 100%;
@@ -47,14 +37,37 @@ header{
     left: 0;
 }
 
+/*Dark mode Toggle*/
+
+.dark-mode{
+    --navbar-ligth: #000000;
+    --calorias-section-ligth: #262626;
+    --food-section-ligth: #404040;
+    --background-clr: #262626;
+    --text-ligth: #FFFFFF;
+    --active-ligth: #7c7c7c;
+    --text-sections: #FFFFFF;
+}
+
+.color-switch {
+    width: 4em;
+    height: 2em;
+    border-radius: 10em;
+    background: var(--clr-base);
+    border: 2px solid var(--clr-primary);    
+    cursor: pointer;
+  }
+
 /*Main*/
 main{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    height: 90vh;
-    margin-top: 5.5vh;
+    height: 95vh;
+    margin-top: 5vh;
+    background-color: var(--background-clr);
 }
 /*Food Section*/
 .food-section{
@@ -65,6 +78,7 @@ main{
     flex-direction: column;
     overflow-y: scroll;
     background-color: var(--food-section-ligth);
+    color: var(--text-sections);
 }
 /*Calories section*/
 .calories-section{
@@ -74,6 +88,7 @@ main{
     align-items: center;
     justify-content: space-around;
     background-color: var(--calorias-section-ligth);
+    color: var(--text-sections);
     font-size: larger;
 }
 
@@ -84,8 +99,6 @@ main{
     justify-content: space-between;
     align-items: center;
     width: 100vh;
-    height: 33vh;
-    margin-top: 2vh;
 }
 
 
@@ -128,4 +141,13 @@ footer a{
     text-decoration: none;
     text-transform: none;
     color: var(--text-ligth);
+}
+
+.in-flex{
+    flex: 1;
+    padding: 25vh;
+}
+
+.in-flex:first-child{
+    flex: 2;
 }
