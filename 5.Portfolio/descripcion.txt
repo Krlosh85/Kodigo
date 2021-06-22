@@ -1,0 +1,9 @@
+El portfolio responsive debe tener:
+
+1. Mi nombre: Carlos Herrera
+2. Foto
+3. ¿Quién soy? (Sobre mí) [Qué servicios ofrezco]
+4. Tecnologias que conozco
+5. Proyectos
+6. Tarjeta de contacto
+7. Perfiles: hackerRun, Platzi, Github, Linkedin, gmail
