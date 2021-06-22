@@ -21,4 +21,6 @@ saveHighScore = e =>{
         name: username.value
     }
     highScore.push(score)
+
+    
 }
