@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do App</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h2>Task list</h2>
+      <a href="#">Create Task</a>
+      <a href="html/tasks">View Tasks</a>
+    </nav>
+    <main class="container">
+      <div class="form">
+        <form action="">
+          <div class="row">
+            <input type="text" name="title" id="title" placeholder="Title" />
+            <input
+              type="datetime-local"
+              id="time"
+              name="time"
+              value="2021-06-23T13:30"
+              min="2021-06-23T00:00"
+              max="2021-12-31T00:00"
+            />
+            <input
+              type="text"
+              name="comment"
+              id="comment"
+              placeholder="Comment"
+            />
+            <input type="radio" name="high" id="high" />
+            <label for="high">High</label>
+            <input type="radio" name="medium" id="medium" />
+            <label for="medium">High</label>
+            <input type="radio" name="low" id="low" />
+            <label for="low">Low</label>
+            <input type="button" value="Save Task" onclick="saveTask()" />
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
