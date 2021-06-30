@@ -1,80 +1,116 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  height: 100%;
-  background: #2f334b;
-  color: white;
+  padding: 0.5em;
+  background-color: #0097A6;
+  font-family: sans-serif;
 }
 
-/* Navbar */
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  top: 0;
+.insert-data {
+  padding: 1.5em;
+  width:100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-bottom: 0.35em;
+}
+
+.form {
   width: 100%;
+  padding: 1em;
+  background-color: #f3f3f3;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.navbar a{
-  float: left;
-  display: block;
-  color: #f2f2f2;
+.text-center {
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+}
+.form input, .form label {
+  width: 90%;
+  display: block;
+  padding: 0.25em;
+  margin: 0.5em;
 }
 
-.navbar a:hover {
-    background: #ddd;
-    color: black;
-  }
+.form .submit {
+  background-color: #3e8ebd;
+  font-weight: 600;
+  color: #fff;
 
-/* Form */
-.container {
+}
+
+
+.show-data {
+  padding: 1.5em;
+  width:100%;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  padding-top: 5rem;
-  align-items: center;
+  flex-flow: row wrap;
   justify-content: center;
-  min-height: 80vh;
+  align-items: stretch;
+  margin-top: 0.5em;
 }
 
-.row {
+.div-center {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  background: #F6F6F6;
-  color: #333;
-  width: 25rem;
-  height: 20rem;
-  border-radius: 10px;
+  flex-flow: row wrap;
+  justify-content: center;
   align-items: center;
 }
 
-input {
-  margin: 0.5rem;
+.task{
+  display: flex;
+  flex: 1;
+  background-color: #f3f3f3;
+  height: 10em;
+  width: 24em;
+  margin: 0.5em;
+  border-radius: 0.4em;
+  padding: 0.4em;
 }
 
-.input-size{
- width: 75%;
+.task:hover{
+  box-shadow: 0 .5rem 0.5rem rgba(0, 0, 4, alpha);
+  transition: 0.4s;
+}
+
+img {
+  height: 100%;
+  display: block;
+  padding: 0.5em;
+}
+
+.img-priority{
+  width: 40px;
+}
+
+.articule-info {
+ background-color: #9abccf;
+ height: 100%;
+ width: 100%;
+ padding: 0.25em;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.articule-info .data {
+ margin: 0.35em
+}
+
+.bold {
+  font-weight: 600;
 }
 
 .radios{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.btn{
-    width: 50%;
-    height: 15%;
-    text-align: center;
-    
+  display: flex;
+  flex-direction: row-reverse !important;
 }
